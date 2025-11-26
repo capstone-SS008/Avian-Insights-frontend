@@ -96,7 +96,7 @@ class BirdHomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 color: Colors.white.withOpacity(0.1),
                 child: const Text(
-                  "Powered by AI",
+                  "A Capstone Project",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
