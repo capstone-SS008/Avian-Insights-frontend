@@ -1,0 +1,110 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter pub get --no-example
+
+## exception
+
+PathNotFoundException: PathNotFoundException: Cannot open file, path = 'C:\Users\KALMESH\Desktop\Capstone_project\bird_identification_flutter\.dart_tool\dartpad\web_plugin_registrant.dart' (OS Error: The system cannot find the path specified.
+, errno = 3)
+
+```
+#0      _checkForErrorResponse (dart:io/common.dart:58:9)
+#1      _File.open.<anonymous closure> (dart:io/file_impl.dart:441:7)
+#2      _rootRunUnary (dart:async/zone.dart:1538:47)
+#3      _CustomZone.runUnary (dart:async/zone.dart:1429:19)
+<asynchronous suspension>
+#4      _File.writeAsBytes.<anonymous closure> (dart:io/file_impl.dart:731:34)
+<asynchronous suspension>
+#5      ForwardingFile.writeAsString (package:file/src/forwarding/forwarding_file.dart:136:12)
+<asynchronous suspension>
+#6      ErrorHandlingFile.writeAsString.<anonymous closure> (package:flutter_tools/src/base/error_handling_io.dart:238:9)
+<asynchronous suspension>
+#7      _run (package:flutter_tools/src/base/error_handling_io.dart:512:12)
+<asynchronous suspension>
+#8      _renderTemplateToFile (package:flutter_tools/src/flutter_plugins.dart:41:3)
+<asynchronous suspension>
+#9      _writeWebPluginRegistrant (package:flutter_tools/src/flutter_plugins.dart:1000:3)
+<asynchronous suspension>
+#10     injectBuildTimePluginFilesForWebPlatform (package:flutter_tools/src/flutter_plugins.dart:1202:3)
+<asynchronous suspension>
+#11     WebProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:1023:5)
+<asynchronous suspension>
+#12     FlutterProject.ensureReadyForPlatformSpecificTooling (package:flutter_tools/src/project.dart:385:7)
+<asynchronous suspension>
+#13     PackagesGetCommand.runCommand (package:flutter_tools/src/commands/packages.dart:388:7)
+<asynchronous suspension>
+#14     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1558:27)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#16     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#17     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:496:9)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#19     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:431:5)
+<asynchronous suspension>
+#20     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:98:11)
+<asynchronous suspension>
+#21     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:154:19)
+<asynchronous suspension>
+#22     main (package:flutter_tools/executable.dart:99:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.29.2, on Microsoft Windows [Version 10.0.26200.7171], locale en-IN) [1,068ms]
+    • Flutter version 3.29.2 on channel stable at C:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision c236373904 (9 months ago), 2025-03-13 16:17:06 -0400
+    • Engine revision 18b71d647a
+    • Dart version 3.7.2
+    • DevTools version 2.42.3
+
+[✓] Windows Version (11 Home Single Language 64-bit, 25H2, 2009) [3.1s]
+
+[!] Android toolchain - develop for Android devices (Android SDK version 35.0.1) [6.8s]
+    • Android SDK at C:\Users\KALMESH\AppData\Local\Android\sdk
+    • Platform android-35, build-tools 35.0.1
+    • Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.5+-13047016-b750.29)
+    ! Some Android licenses not accepted. To resolve this, run: flutter doctor --android-licenses
+
+[✓] Chrome - develop for the web [283ms]
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.14.7) [280ms]
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.14.36221.1
+    • Windows 10 SDK version 10.0.26100.0
+
+[✓] Android Studio (version 2024.3) [29ms]
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 21.0.5+-13047016-b750.29)
+
+[✓] VS Code (version 1.105.1) [25ms]
+    • VS Code at C:\Users\KALMESH\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.122.0
+
+[✓] Connected device (3 available) [346ms]
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.26200.7171]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 142.0.7444.163
+    • Edge (web)        • edge    • web-javascript • Microsoft Edge 142.0.3595.94
+
+[✓] Network resources [501ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 1 category.
+```
